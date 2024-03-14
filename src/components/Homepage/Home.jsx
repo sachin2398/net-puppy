@@ -1,15 +1,17 @@
 import React from 'react'
-import Header from '../Header'
-import styles from '../../styles/style.module.css'
-import CardPlayer from '../utils/CardPlayer'
+import Header from '../SubComponent/Header'
+import styles from "../../styles/page.module.css"
+import CardComponent from '../SubComponent/cardComponent'
 import CountUp from 'react-countup'
-import Footer from '../Footer'
+import Footer from '../SubComponent/Footer'
+import { FaArrowRight } from "react-icons/fa";
+import { FaPlayCircle } from "react-icons/fa";
 
-export default function Index() {
+export default function Home() {
   return (
     <div>
       <Header />
-      <section className={styles.articalSection}>
+      <section className={styles.ArticleSection}>
           <div>
             <article>
               <p>
@@ -17,40 +19,40 @@ export default function Index() {
               </p>
               <p>( Our Students love that! )</p>
             </article>
-            <CardPlayer 
+            <CardComponent 
               heading="Swimming"
               description="22 Acres, Pollution- Free, World-Class."
               source='https://s3-alpha-sig.figma.com/img/0805/aac5/4ba7a2e8b502c70814e51c05d023bce1?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BwMie0ePzus2aiR9pJUMXZItA6FWFxZCeYs352MxlT3s5ajiaKfPcbooSuju7cB-jMAwH2lsz8neSW2W65RiC72mpkAB2QMzvbmwnQOigCn6zzFXj1qNqSesJ27ZSXsJJN5zKsQybAIREatK2LYvLY4gCEcuM8E7MGMY8bi1hBI6TJOKcJqDXyw5xCeSeAa1CpqMSRBbHLSQgtO6EtNwnFMKvAIviGCZE4Q10VdhY0xhH8-PEUl66IdZQCQvIhT1Vf8z9lOG6-mMQVv2XivqX8gPJMm~~UFjsgAdXKdcn27ME3opFcGz5P4QPzPGaEvWAHyOf8T26K7ZFhba4uu8~Q__'
             />
             <button>
                 SEE ALL ACTIVITIES
-                <span class="material-symbols-outlined">arrow_right_alt</span>
+                <span class="material-symbols-outlined"><FaArrowRight /></span>
             </button>
           </div>
           <div>
               <img src='https://s3-alpha-sig.figma.com/img/bf56/d53b/e4ae8c11aa3b517d3b5f05edfa67ced4?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fMHpbwP7USeuVo5tcjxx6vEboXa1YAJkPT34MU02u4SmkzJmhqohazql5GYBUAxx~1MCdIvmLbvpI2awK0zMKJdXv6x2V12q0ttTbiTfXk7-GMgMr3RIoRwS6eoYXZXxJMzEAOlREWbbiL47jmI3zePluBDppCkMZPQQk6XFglKzJkB8-Ffj-Qc5ff~YcXdP-7gvwkhzwsKnYEBfEHs3CsURyrpHpdBO8x~nt2hl-7i5WLJI~NOEFFlP9zeyY7a9dPidMymLyzTS4598YL-I22fIsG7UxAzwy05xeyPWQmAbnCBBfwF3l6vXWLWRcyxv1GvbJ5qvSA2VM2wL6EZxOA__' />
           </div>
           <div>
-            <CardPlayer 
+            <CardComponent 
               heading="Taekwondo"
               description="22 Acres, Pollution- Free, World-Class."
               source='https://s3-alpha-sig.figma.com/img/f6c9/6040/f9653461eb9b6309e40f102bf5863b7e?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=daEeT0vzcucrZD7ZMzkM90bIM7bP7sUK8OlfQXFPMGKYj7u3WzRgyrSroM76ov9vPkDrDj37ERVHPTthrdeoFmJWFh89hJNsIa~hS5TZqzLzu-9PN~12Wk26IcngvFcYWzT6CEmRVsclFGIJvByXK~U1j6yRBtZzGn7Qv-EZVNoYZ0uA-mrwkuip1piZVQ7iXJ-5dJ8iuYEEQggH0tzbkfesFyMB9z-LG25tJ7BHDc4r9yYwM3mw-Per8zy4NTC8uiJpdvYHbQ3jyV3jGuDl6d8bDF4bpQtQR-Q2eO-i4Pbb6~v6WW6Mm8jj6gZL-QQjZDJJeyoOTFMQv6N~DrOMEQ__'
             />
-            <CardPlayer 
+            <CardComponent 
               heading="Horse Riding"
               description="22 Acres, Pollution- Free, World-Class."
               source='https://s3-alpha-sig.figma.com/img/4e0a/c460/2c0383f400220dcb63e7c93c7e04b629?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h5TrP94pPaUA8~e0LDL5Td3ECiGjji-Y1e5ReSqyKlyzRhp27py4SRXrcTyierP~Du-XLAL1eblvjpwFP5bLIp7m-ApH01641XGNHUSoXXS~U12ubvyurWYYsNnV1J-q9lUxDJWIZ06uy3j58Ak4k-c-ch5COOtcDmniHlbLgiT~TpfTHysYp7I67SwDj0trndKtq7CH69pTA-Pkgxs3OXyG6IizFfFhbX4tpuPyXyc8LEf-gQgVYAvf2KTUC8TXrPsqXHVhhZn-T6fi-VrMXZnzTw0qxMGoVLUgQs6fXM8C2G4cB6bfjujDCfSqDci9s7pB8mTt~8C5iWFxsWNzww__'
             />
           </div>
       </section>
-      <section className={styles.videoSection}>
+      <section className={styles.VideoSection}>
         <div style={{backgroundImage: `url(https://s3-alpha-sig.figma.com/img/a28b/9f5f/b3c65245636894337842651c84e28ada?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hGIdhsECkBBA6ZEicDZNtsLwhOeEprV62dk061u6lL-N0kAVQj1Z9D~OjRTApZrpmA-wwdW9bvnHixg~wN5CFhIIUlwq~wqJj~vvPHSOgmvKjS5TeEYP7aRQrAhqjNzqVXUar7ZDCQfsyxl5jOktszJDPMQoi3YnqrQNiIM-5lSpZzv89OcK5u5B9qB6FF6nTnb2Jy7Zh~WbS6ZEMbm~8OuC~D-HrTrwsuzKvWFcCKs7WSKK3HufvRfFBqsr66-lfj55GBuLxP2kurAZs219F3hfsR6QDAXLqhz1fTBsoRv3e~StxwhVWg8bljDGNrxSJ5wsPGtwjNk-zNX2-XNBCQ__)`}}>
           <div>
-           <span class="material-symbols-outlined">play_circle</span>
+           <span class="material-symbols-outlined"><FaPlayCircle /></span>
           </div>
         </div>
       </section>
-      <section className={styles.testimonySection}>
+      <section className={styles.TestimonySection}>
         <div>
           <img src='https://s3-alpha-sig.figma.com/img/fa23/ede2/89a9dcfcc8953ab542e1ecec581ce3ff?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dqN79bwL6O~IG7kBSamKa1~ScfRBv7PFKNscaIXNHQpq2RZOnGW-DYBwyIOL45NZr3bJWZdj6pq4hEOewwwAz3BNA-YaGjWzXVzsBv25Sp07KT9M8Lyhq2-cNDIkL6WRovWthu~hlJSY8pG8oOP4X0aelh26zPmGo-iwEZD4ZbEhTy4EUas8x2fPlxIIiJVL4U7LcHc9X0O7G5Oj6yTGP7w3uDJh3DWVfaiVtWDJggboIV9jMt-CwP80zgtIdGY2dBFf0UPzSatB-ZUs1eCVHW~Kyy7ONSju7Dbznhu29RUMwu1j5y7pMSrz6vcUOk3v2~pTW2LSk3O7MmlyBAd99A__' />
         </div>
@@ -59,11 +61,11 @@ export default function Index() {
           <p>Using the latest research on how girls learn best, we designed an innovative modular schedule, personalized for each student. Our girls are focused, not overwhelmed. “Girls Rule” isn’t just a saying here. Develop leadership skills, build compassion, gain responsibility, and prepare to change the world.</p>
           <button>
               LEARN MORE
-              <span class="material-symbols-outlined">arrow_right_alt</span>
+              <span class="material-symbols-outlined"><FaArrowRight /></span>
           </button>
         </div>
       </section>
-      <section className={styles.questionSection}>
+      <section className={styles.QuestionSection}>
         <h1>Why <span>TIS?</span></h1>
         <div>
           <h3>A FOCUS ON...</h3>
@@ -98,7 +100,7 @@ export default function Index() {
           </ul>
         </div>
       </section>
-      <section className={styles.reportSection}>
+      <section className={styles.ReportSection}>
           <div style={{backgroundImage: 'url(https://s3-alpha-sig.figma.com/img/7cf4/46c5/f6e6d5ff663185ebfe4c11e8dc6be6ac?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fD7r~93HJUxi-fQsSxBsqt5FM3ocF~BEOfeiQ~7r0iDqNAW5KkvOtS1vEpoQi8~NGLrkPZLgN-eXnzfU9itpZe1m7WQEpS2B4aaWMSowtEfZcglXruUyrhxaAI2q08LD5dC91J42yBUVowSZWMP2J6hkt7-aAAskj3kZwSPx3JOtKBdjEoPKHpnwVuth0-JH0Va~D3wCq9ZEXc2lW5P8pXlgIjaa7sLrz9GJn09TY45up67pnKLj9-UzrqZKvfwPK~KQ-cvR~eou3NFLgAIxH9~iQgNib32OWyKLLsLzg3c10srr1VTnNR15lQzNRgZp9gTIXs5ledj-qvlwXJJf0g__)'}}>
               <img src='https://s3-alpha-sig.figma.com/img/8187/6eca/bf05a2072f3b706ad72b30d96eba0a0b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Xz4o~5PXe6pr7tS0f7DU2kzUUNy11nxS0k58r51jZ3HCwILW3vTrEq896IBEoO8MHuZIIKu0Vie6T63Njuf~j-iJrO5jgaRP1gzukKZdjX4epvjp2ZowPP0Mng~RvlvxaBWR1-rOTKPgwF80F-m8ulrF572HBvpPoSKwLiqpiYdoWrE3ytp4IzVLaqmXo11UlHrNM8-yTdpPcvdfdX-SuG4L69tcsn3DX3kG2nilrsulZyWOudy692FT~xZyjnX5cPoK-GS53asvmujDEXo8iLnZDJYRqb6DWavPrQuMF7ps3UZl06m7uvWppiOFDVhaoTbRe9rWFREHblIo5Cj-Lg__' />
               <div>
@@ -136,7 +138,7 @@ export default function Index() {
             </div>
           </div>
       </section>
-      <section className={styles.articalSection} style={{flexDirection: 'row-reverse', paddingTop: 0}}>
+      <section className={styles.ArticleSection} style={{flexDirection: 'row-reverse', paddingTop: 0}}>
           <div>
             <article>
               <p>
@@ -144,33 +146,33 @@ export default function Index() {
               </p>
               <p>( Our Students love that! )</p>
             </article>
-            <CardPlayer 
+            <CardComponent 
               heading="Swimming"
               description="22 Acres, Pollution- Free, World-Class."
               source='https://s3-alpha-sig.figma.com/img/0805/aac5/4ba7a2e8b502c70814e51c05d023bce1?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BwMie0ePzus2aiR9pJUMXZItA6FWFxZCeYs352MxlT3s5ajiaKfPcbooSuju7cB-jMAwH2lsz8neSW2W65RiC72mpkAB2QMzvbmwnQOigCn6zzFXj1qNqSesJ27ZSXsJJN5zKsQybAIREatK2LYvLY4gCEcuM8E7MGMY8bi1hBI6TJOKcJqDXyw5xCeSeAa1CpqMSRBbHLSQgtO6EtNwnFMKvAIviGCZE4Q10VdhY0xhH8-PEUl66IdZQCQvIhT1Vf8z9lOG6-mMQVv2XivqX8gPJMm~~UFjsgAdXKdcn27ME3opFcGz5P4QPzPGaEvWAHyOf8T26K7ZFhba4uu8~Q__'
             />
             <button>
                 SEE ALL ACTIVITIES
-                <span class="material-symbols-outlined">arrow_right_alt</span>
+                <span class="material-symbols-outlined"><FaArrowRight /></span>
             </button>
           </div>
           <div>
               <img src='https://s3-alpha-sig.figma.com/img/bf56/d53b/e4ae8c11aa3b517d3b5f05edfa67ced4?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fMHpbwP7USeuVo5tcjxx6vEboXa1YAJkPT34MU02u4SmkzJmhqohazql5GYBUAxx~1MCdIvmLbvpI2awK0zMKJdXv6x2V12q0ttTbiTfXk7-GMgMr3RIoRwS6eoYXZXxJMzEAOlREWbbiL47jmI3zePluBDppCkMZPQQk6XFglKzJkB8-Ffj-Qc5ff~YcXdP-7gvwkhzwsKnYEBfEHs3CsURyrpHpdBO8x~nt2hl-7i5WLJI~NOEFFlP9zeyY7a9dPidMymLyzTS4598YL-I22fIsG7UxAzwy05xeyPWQmAbnCBBfwF3l6vXWLWRcyxv1GvbJ5qvSA2VM2wL6EZxOA__' />
           </div>
           <div>
-            <CardPlayer 
+            <CardComponent 
               heading="Taekwondo"
               description="22 Acres, Pollution- Free, World-Class."
               source='https://s3-alpha-sig.figma.com/img/f6c9/6040/f9653461eb9b6309e40f102bf5863b7e?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=daEeT0vzcucrZD7ZMzkM90bIM7bP7sUK8OlfQXFPMGKYj7u3WzRgyrSroM76ov9vPkDrDj37ERVHPTthrdeoFmJWFh89hJNsIa~hS5TZqzLzu-9PN~12Wk26IcngvFcYWzT6CEmRVsclFGIJvByXK~U1j6yRBtZzGn7Qv-EZVNoYZ0uA-mrwkuip1piZVQ7iXJ-5dJ8iuYEEQggH0tzbkfesFyMB9z-LG25tJ7BHDc4r9yYwM3mw-Per8zy4NTC8uiJpdvYHbQ3jyV3jGuDl6d8bDF4bpQtQR-Q2eO-i4Pbb6~v6WW6Mm8jj6gZL-QQjZDJJeyoOTFMQv6N~DrOMEQ__'
             />
-            <CardPlayer 
+            <CardComponent 
               heading="Horse Riding"
               description="22 Acres, Pollution- Free, World-Class."
               source='https://s3-alpha-sig.figma.com/img/4e0a/c460/2c0383f400220dcb63e7c93c7e04b629?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h5TrP94pPaUA8~e0LDL5Td3ECiGjji-Y1e5ReSqyKlyzRhp27py4SRXrcTyierP~Du-XLAL1eblvjpwFP5bLIp7m-ApH01641XGNHUSoXXS~U12ubvyurWYYsNnV1J-q9lUxDJWIZ06uy3j58Ak4k-c-ch5COOtcDmniHlbLgiT~TpfTHysYp7I67SwDj0trndKtq7CH69pTA-Pkgxs3OXyG6IizFfFhbX4tpuPyXyc8LEf-gQgVYAvf2KTUC8TXrPsqXHVhhZn-T6fi-VrMXZnzTw0qxMGoVLUgQs6fXM8C2G4cB6bfjujDCfSqDci9s7pB8mTt~8C5iWFxsWNzww__'
             />
           </div>
       </section>
-      <section className={styles.rankingSection}>
+      <section className={styles.RankingSection}>
         <div>
           <img src='https://s3-alpha-sig.figma.com/img/4919/b499/08fe1bd4370e05cf7e9c3fb03f5e4802?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RkPF6JNqeufyXec9ORMC-Tj36emxWRZ2TvpMCUoEb5Yqf1O7qPvrUmIBIbDfZwRlJOCrm0ZmktSzwAeCYmA5gLI9i1lkM7lPCtga54SGXJjlb5jX0TyRBMUjkkDnWJInfnLcDqCcP4vuosbFo2xZWicBWuie5rEJKjtxSBplc4zaAr~HaOo-UDeeIcOptmdHolKrmrmY-qvgpdMFnXfeZL4yllLd6VE-O5FaZnWsyj6A339plINfEgpzDmNM9NFkG3DSO6LXSxAAutRxq4TsO40J-xuWveJyMrTyom1uwq4nGSRqH-caaIqevHljErpvX39jMJ9Gh83OECXMDFxGaw__' />
           <h3>Our Rankings</h3>
@@ -195,7 +197,7 @@ export default function Index() {
           <p>Co-Educational Boarding School in India by Education Today 2020</p>
         </div>
       </section>
-      <section className={styles.parentsSection}>
+      <section className={styles.ParentsSection}>
           <div>
             <h1>From The</h1>
             <h1>Parents</h1>

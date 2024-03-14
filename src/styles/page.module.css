@@ -1,5 +1,4 @@
-/* header styling */
-
+/* header style */
 .header{
     background-color: var(--primary);
     display: flex;
@@ -62,35 +61,36 @@
     text-align: right;
 }
 
+
 /* content styling */
 
-.articalSection{
+.ArticleSection{
     display: flex;
     padding: 50px;
     gap: 30px;
 }
 
-.articalSection > div{
+.ArticleSection > div{
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 50px;
     justify-content: space-between;
 }
-.articalSection > div > article > p{
+.ArticleSection > div > article > p{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
 }
-.articalSection > div > article > p:first-child{
+.ArticleSection > div > article > p:first-child{
     font-style: italic;
 }
-.articalSection > div > article > p:last-child{
+.ArticleSection > div > article > p:last-child{
     color: #60BDBB;
     margin-top: 20px;
 }
-.articalSection > div:first-child button,
-.testimonySection > div:last-child button
+.ArticleSection > div:first-child button,
+.TestimonySection > div:last-child button
 {
     border-radius: 50px;
     height: 50px;
@@ -107,33 +107,33 @@
     color: #DBC79F;
     transition: box-shadow .5s;
 }
-.articalSection > div:nth-child(2){
+.ArticleSection > div:nth-child(2){
     flex: 0;
     display: flex;
     justify-content: center;
 }
-.articalSection > div:nth-child(2) img{
+.ArticleSection > div:nth-child(2) img{
     height: 80px;
     width: 80px;
 }
-.articalSection > div:first-child button:hover,
-.testimonySection > div:last-child button:hover{
+.ArticleSection > div:first-child button:hover,
+.TestimonySection > div:last-child button:hover{
     box-shadow: 0px 5px 20px 0px #0000001a
 }
 
-.videoSection{
+.VideoSection{
     aspect-ratio: 16/9;
     background-color: whitesmoke;
     margin: 50px;
 }
-.videoSection > div{
+.VideoSection > div{
     background-size: cover;
     height: 100%;
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
 }
-.videoSection > div > div{
+.VideoSection > div > div{
     background-color: rgba(0, 0, 0, 0.439);
     display: flex;
     justify-content: center;
@@ -141,43 +141,43 @@
     height: 100%;
     width: 100%;
 }
-.videoSection > div > div span{
+.VideoSection > div > div span{
     font-size: 100px;
     color: white;
     cursor: pointer;
 }
 
-.testimonySection{
+.TestimonySection{
     display: flex;
     gap: 20px;
     margin: 50px;
 }
-.testimonySection > div{
+.TestimonySection > div{
     flex: 1;
 }
-.testimonySection > div:first-child{
+.TestimonySection > div:first-child{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.testimonySection > div:last-child{
+.TestimonySection > div:last-child{
     display: flex;
     flex-direction: column;
 }
-.testimonySection > div:last-child h3{
+.TestimonySection > div:last-child h3{
     font-size: 25px;
     color: #B90124;
     margin: 0;
 }
-.testimonySection > div:last-child button{
+.TestimonySection > div:last-child button{
     margin-top: 50px;
 }
-.questionSection{
+.QuestionSection{
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
 }
-.questionSection > h1{
+.QuestionSection > h1{
     width: 100%;
     flex-shrink: 0;
     text-align: center;
@@ -186,43 +186,43 @@
     margin: 0;
     margin-bottom: 30px;
 }
-.questionSection > h1 span{
+.QuestionSection > h1 span{
     color: var(--primary);
 }
-.questionSection > div{
+.QuestionSection > div{
     flex: 1;
     width: 50%;
 }
-.questionSection > div:first-of-type{
+.QuestionSection > div:first-of-type{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.questionSection > div:first-of-type h3{
+.QuestionSection > div:first-of-type h3{
     font-size: 23px;
     margin: 0;
     padding-right: 50px;
 }
-.questionSection > div:first-of-type h3 + h3{
+.QuestionSection > div:first-of-type h3 + h3{
     color: var(--primary);
     font-size: 30px;
     margin-left: 15%;
     padding-right: 50px;
 }
-.questionSection > div:first-of-type p{
+.QuestionSection > div:first-of-type p{
     margin-top: 50px;
     padding-right: 50px;
 }
-.questionSection > div:last-of-type {
+.QuestionSection > div:last-of-type {
     display: flex;
 }
-.questionSection > div:last-of-type > img{
+.QuestionSection > div:last-of-type > img{
     border-radius: 5px;
     width: calc(100% - 150px);
     margin-right: 50px;
     object-fit: cover;
 }
-.questionSection > div:last-of-type > ul{
+.QuestionSection > div:last-of-type > ul{
     padding: 0;
     margin: 0;
     list-style: none;
@@ -231,23 +231,23 @@
     flex-direction: column;
     gap: 20px;
 }
-.questionSection > div:last-of-type > ul li{
+.QuestionSection > div:last-of-type > ul li{
     text-align: center;
     font-size: .9rem;
     border-radius: 5px;
     padding: 5px;
 }
-.questionSection > div:last-of-type > ul li:last-of-type{
+.QuestionSection > div:last-of-type > ul li:last-of-type{
     background-color: var(--primary);
 }
-.questionSection > div:last-of-type > ul img{
+.QuestionSection > div:last-of-type > ul img{
     height: min(5vmax, 40px);
     aspect-ratio: 1/1;
 }
-.reportSection{
+.ReportSection{
     padding: 50px;
 }
-.reportSection > div:first-child{
+.ReportSection > div:first-child{
     background-size: 100%;
     position: relative;
     background-position: 0 -100px;
@@ -258,31 +258,31 @@
     align-items: center;
     gap: 20px;
 }
-.reportSection > div:first-child::before{
+.ReportSection > div:first-child::before{
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.437);
 }
-.reportSection > div:first-child > *{
+.ReportSection > div:first-child > *{
     position: relative;
 }
-.reportSection > div:first-child > img{
+.ReportSection > div:first-child > img{
     height: 50px;
     width: 50px;
     filter: invert(40%) brightness(200%);
 }
-.reportSection > div:first-child > div h3{
+.ReportSection > div:first-child > div h3{
     margin: 0;
     color: white;
     white-space: nowrap;
     font-size: 25px;
 }
-.reportSection > div:first-child > div h3:last-of-type{
+.ReportSection > div:first-child > div h3:last-of-type{
     margin-left: 50%;
 }
-.reportSection > div:last-child{
+.ReportSection > div:last-child{
     display: flex;
     width: 80%;
     background-color: var(--primary);
@@ -292,21 +292,21 @@
     border-radius: 5px;
     gap: 10px;
 }
-.reportSection > div:last-child > div{
+.ReportSection > div:last-child > div{
     text-align: center;
 }
-.reportSection > div:last-child span{
+.ReportSection > div:last-child span{
     font-size: 1.5rem;
     color: white;
     font-weight: 600;
 }
-.reportSection > div:last-child p{
+.ReportSection > div:last-child p{
     font-size: 1rem;
     margin: 0;
     margin-top: 10px;
     color: white;
 }
-.rankingSection{
+.RankingSection{
     display: flex;
     align-items: center;
     padding: 50px;
@@ -314,7 +314,7 @@
     background-color: #F8F5F0;
     flex-wrap: wrap;
 }
-.rankingSection > div{
+.RankingSection > div{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -327,73 +327,73 @@
     box-shadow: 0px 5px 20px 0px #0000001a;
     flex-shrink: 0;
 }
-.rankingSection > div img{
+.RankingSection > div img{
     height: 50px;
 }
-.rankingSection > div :is(p, h3, h2){
+.RankingSection > div :is(p, h3, h2){
     margin: 0;
 }
-.rankingSection > div h3{
+.RankingSection > div h3{
     white-space: nowrap;
     font-size: larger;
     color: var(--primary);
 }
-.rankingSection > div:first-child{
+.RankingSection > div:first-child{
     border: 2px solid var(--primary);
     flex: 1.5;
     gap: 10px;
     background-color: white;
 }
-.rankingSection > div:nth-child(2){
+.RankingSection > div:nth-child(2){
     flex: 0;
     box-shadow: none
 }
-.rankingSection > div:nth-child(2) img{
+.RankingSection > div:nth-child(2) img{
     rotate: -90deg;
 }
-.rankingSection > div:nth-child(2) ~ div{
+.RankingSection > div:nth-child(2) ~ div{
     background-color: var(--primary);
     color: white;
 }
-.rankingSection > div:nth-child(2) ~ div p{
+.RankingSection > div:nth-child(2) ~ div p{
     font-size: 14px;
 }
-.rankingSection > div:nth-child(2) ~ div h3{
+.RankingSection > div:nth-child(2) ~ div h3{
     color: white;
     margin-bottom: 10px;
 }
-.parentsSection{
+.ParentsSection{
     display: flex;
     padding: 50px;
     align-items: center;
 }
-.parentsSection > div{
+.ParentsSection > div{
     flex: 1;
 }
-.parentsSection > div:first-child{
+.ParentsSection > div:first-child{
     padding: 20px;
 }
-.parentsSection > div:first-child h1{
+.ParentsSection > div:first-child h1{
     margin: 10px;
     text-align: center;
     font-size: 30px;
 }
-.parentsSection > div:first-child h1:last-of-type{
+.ParentsSection > div:first-child h1:last-of-type{
     color: var(--primary);
     font-style: italic;
 }
-.parentsSection > div:first-child hr{
+.ParentsSection > div:first-child hr{
     width: 80%;
     background-color: var(--primary);
     border: none;
     height: 2px;
     margin-bottom: 50px;
 }
-.parentsSection > div:last-child{
+.ParentsSection > div:last-child{
     display: flex;
     position: relative;
 }
-.parentsSection > div:last-child > div:first-child{
+.ParentsSection > div:last-child > div:first-child{
     width: 50%;
     aspect-ratio: 9/16;
     background-size: 300%;
@@ -403,12 +403,12 @@
     align-items: center;
     position: relative;
 }
-.parentsSection > div:last-child > div:first-child span{
+.ParentsSection > div:last-child > div:first-child span{
     color: white;
     font-size: 40px;
     cursor: pointer;
 }
-.parentsSection > div:last-child > div:last-child{
+.ParentsSection > div:last-child > div:last-child{
     background-color: var(--primary);
     position: absolute;
     height: 100%;
@@ -420,11 +420,8 @@
     border-bottom-left-radius: 50px;
 }
 
-/* footer style */
+/* Footer style */
 
-.footer{
-
-}
 .footer > div:first-child{
     display: flex;
     justify-content: center;
@@ -528,23 +525,23 @@
         margin-left: 0;
         margin-top: 25px;
     }
-    .articalSection > div:nth-child(2){
+    .ArticleSection > div:nth-child(2){
         display: none;
     }
-    .questionSection{
+    .QuestionSection{
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
-    .questionSection > div{
+    .QuestionSection > div{
         width: 100%;
         align-items: center;
     }
-    .questionSection > div:last-of-type{
+    .QuestionSection > div:last-of-type{
         flex-direction: column-reverse;
         gap: 20px;
     }
-    .questionSection > div:last-of-type > ul{
+    .QuestionSection > div:last-of-type > ul{
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
@@ -556,14 +553,14 @@
     html{
         font-size: 10px;
     }
-    .articalSection{
+    .ArticleSection{
         flex-direction: column !important;
     }
-    .articalSection > div:first-child button,
+    .ArticleSection > div:first-child button,
     .testimonySection > div:last-child button{
         display: none;
     }
-    .testimonySection{
+    .TestimonySection{
         flex-direction: column-reverse;
     }
 }
@@ -576,20 +573,20 @@
     .header > nav ul > div{
         display: none;
     }
-    .rankingSection{
+    .RankingSection{
         flex-direction: column;
     }
-    .rankingSection > div:nth-child(2){
+    .RankingSection > div:nth-child(2){
         display: none;
     }
-    .rankingSection > div{
+    .RankingSection > div{
         width: 50%;
         min-width: 200px;
     }
-    .parentsSection{
+    .ParentsSection{
         flex-direction: column;
     }
-    .parentsSection > div:last-child{
+    .ParentsSection > div:last-child{
         width: 100%;
     }
 }

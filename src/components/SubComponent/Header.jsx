@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/style.module.css'
+import styles from '../../styles/page.module.css'
 
 export default function Header() {
   return (
@@ -11,7 +11,7 @@ export default function Header() {
                 <li>SUPPORT US</li>
                 <div></div>
                 <li>PARENTS</li>
-                <li>AKUMS</li>
+                <li>ALUMS</li>
             </ul>
         </nav>
         <section>
